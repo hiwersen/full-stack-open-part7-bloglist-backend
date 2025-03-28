@@ -14,13 +14,13 @@
     "'user",
     "administration'"
   ],
-  "homepage": "https://github.com/hiwersen/full-stack-open-part4-bloglist#readme",
+  "homepage": "https://github.com/hiwersen/full-stack-open-part7-bloglist-backend#readme",
   "bugs": {
-    "url": "https://github.com/hiwersen/full-stack-open-part4-bloglist/issues"
+    "url": "https://github.com/hiwersen/full-stack-open-part7-bloglist-backend/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hiwersen/full-stack-open-part4-bloglist.git"
+    "url": "git+https://github.com/hiwersen/full-stack-open-part7-bloglist-backend.git"
   },
   "license": "ISC",
   "author": "Hiwersen Angelo",
