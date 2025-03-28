@@ -1,0 +1,43 @@
+###
+GET http://localhost:3003/api/blogs
+
+###
+GET http://localhost:3003/api/blogs/67afd15e44a8c26f4857855c
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imp1cGlyYW1hcmluYSIsImlkIjoiNjdkZjQ2YjhjODAxZGJlODU5MGQ1NjhiIiwiaWF0IjoxNzQyOTAzMjQyLCJleHAiOjE3NDI5MDQxNDJ9.wivoz3Ng68NqAPc9ZAyj2keL4i11w3wtKIW3OuN0MLM
+
+{
+    "author": "Unknown",
+    "title": "Created on March 25, at 11:49 am",
+    "url": "https://www.example.com"
+}
+
+###
+POST http://localhost:3003/api/blogs/67e29826d50c039d9ca98b76/like
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJpZCI6IjY3YjFjODVlOGE3NGQyYTAyNmVjYjhhOCIsImlhdCI6MTc0MjkwNjM3NSwiZXhwIjoxNzQyOTA3Mjc1fQ.HrDgKxP2Ch2S-_kJqkdYvgqJ2mmx60T85zZFh6pzcGI
+
+###
+POST http://localhost:3003/api/blogs/67dd1c35a9ce77f9f3d26b76/comments
+Content-Type: application/json
+
+{
+    "comment": "This was very insightful."
+}
+
+###
+DELETE http://localhost:3003/api/blogs/67a4d0688b5635b99ad80bb1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5kb2UiLCJpZCI6IjY3YTM3NWI1MDVhOWZiZmE0MmIyY2E3MyIsImlhdCI6MTczOTEwMzQ3OX0.exDWUmEqFyaBPNPBV7O8qh4YDun2oLIZc5bj86Cs_eA
+
+###
+PUT http://localhost:3003/api/blogs/679b4d8f27d1017eb7edbc22
+Content-Type: application/json
+
+{
+    "title": "Hello, World!",
+    "author": "John Doe",
+    "url": "https://www.example.com",
+    "likes": 0
+}

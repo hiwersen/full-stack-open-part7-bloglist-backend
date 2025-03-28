@@ -1,0 +1,50 @@
+{
+  "name": "bloglist",
+  "version": "1.0.0",
+  "description": "full stack open part4 project",
+  "keywords": [
+    "bloglist",
+    "'full",
+    "stack",
+    "open'",
+    "course",
+    "part4",
+    "project",
+    "testing",
+    "'user",
+    "administration'"
+  ],
+  "homepage": "https://github.com/hiwersen/full-stack-open-part4-bloglist#readme",
+  "bugs": {
+    "url": "https://github.com/hiwersen/full-stack-open-part4-bloglist/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiwersen/full-stack-open-part4-bloglist.git"
+  },
+  "license": "ISC",
+  "author": "Hiwersen Angelo",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node index.js",
+    "test": "cross-env NODE_ENV=test node --test --test-concurrency=1",
+    "dev": "cross-env NODE_ENV=development nodemon --inspect index.js",
+    "build:ui": "rm -rf dist && cd ../frontend/ && npm run build && cp -r dist ../backend",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "supertest": "^7.0.0"
+  }
+}
